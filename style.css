@@ -1,10 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
 
-*{
-	box-sizing: border-box;
- }
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
+}
 body{
 	background-color: hsl(0, 0%, 100%);
 	font-size: 1.125rem;
@@ -13,6 +15,7 @@ body{
 	padding: 0;
 	overflow-x: hidden;
 	z-index: 0;
+
 	}
 .container{
 	margin: 0 auto;
@@ -84,7 +87,7 @@ header{
     height: 10%;
     width: 10%;
 	}
-.hamburger{
+#hamburger{
 	display: none;
 	}
 .btn-Request,.btn-RequestNav,.btn-footer{
@@ -168,17 +171,17 @@ header{
 	height: 780px;
 	width: 800px;
 	z-index: -3;
+
 	}
 
 /*easy-bank*/
 .easy-bank{
 	width: 100%;
 	background: hsl(220, 16%, 96%);
-	padding: 50px;
+	
 	}
 .easybank-list{
 	display: flex;
-	/*margin-left: 100px;*/
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
@@ -311,10 +314,10 @@ footer{
 	border-radius: 10px;
     }
 
-.hamburger{
-	display: block;
+#hamburger{
+	display: none;
     }
-.hamburger-close{
+#hamburger-close{
 	display: none;
 	} 
 .btn-RequestNav{
@@ -338,6 +341,7 @@ footer{
 	height: 782px;
 	width: 600px;
 	right: -224px;
+
 	}
 
 .intro-img .introImg{
