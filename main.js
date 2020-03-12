@@ -8,5 +8,6 @@
 
 function myFunction(x) {
   x.classList.toggle("change");
-  navMenu.classList.toggle('show');
+   // navMenu.classList.toggle('overlay');
+    navMenu.classList.toggle('show');
 }
