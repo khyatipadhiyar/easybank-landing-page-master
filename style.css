@@ -5,7 +5,7 @@
 	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 body{
 	background-color: hsl(0, 0%, 100%);
@@ -90,7 +90,9 @@ header{
 #hamburger{
 	display: none;
 	}
-.btn-Request,.btn-RequestNav,.btn-footer{
+.btn-Request,
+.btn-RequestNav,
+.btn-footer{
 	background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%) );
 	padding: 10px 30px;
 	border-radius: 20px;
@@ -98,7 +100,8 @@ header{
 	color: #fff;
 	font-size: 1rem;
 	font-family: 'Public Sans', sans-serif;
-	box-shadow: 1px 1px 4px hsl(192, 70%, 51%), -1px -1px 4px hsl(136, 65%, 51%);
+	box-shadow: 1px 1px 4px hsl(192, 70%, 51%), 
+	-1px -1px 4px hsl(136, 65%, 51%);
 	cursor: pointer;
 	}
 .btn-Request:hover,
@@ -107,11 +110,6 @@ header{
 	color: #000;
 	}
 /*intro*/
-.introcontainer{
-	margin: 0 auto;
-	width: 1200px;
-	max-width: 100%;
-}
 .intro-container{
 	padding:10px;
 	margin-top:30px;
@@ -126,7 +124,7 @@ header{
 	justify-content: space-between;
 	flex-wrap: wrap-reverse;
 	background: hsl(0, 0%, 98%);
-}
+    }
 .intro-text{
 	width: 40%;
 	max-width: 100%;
@@ -171,14 +169,13 @@ header{
 	height: 780px;
 	width: 800px;
 	z-index: -3;
-
 	}
 
 /*easy-bank*/
 .easy-bank{
 	width: 100%;
 	background: hsl(220, 16%, 96%);
-	
+	padding: 50px;
 	}
 .easybank-list{
 	display: flex;
@@ -191,8 +188,9 @@ header{
 	max-width: 100%;
 	}
 .easybank-type img{
-	box-shadow: 1px 1px 4px hsl(192, 70%, 51%), -1px -1px 4px hsl(136, 65%, 51%);
 	border-radius: 50%;
+	box-shadow: 1px 1px 4px hsl(192, 70%, 51%), 
+			  -1px -1px 4px hsl(136, 65%, 51%);
 }
 .easy-text h3
 	{
@@ -292,6 +290,10 @@ footer{
 	}
 
 @media only screen and (max-width: 768px){
+
+*, *:before, *:after {
+  		overflow-x: hidden;
+	}
 .navList{
 	position: unset;
 }
@@ -303,14 +305,14 @@ footer{
 	display: block;
 	}
 
-.navMenu.overlay{
+/*.intro-img.overlay{
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
 	background-color: #000;
-	opacity: 0.3;
-}	
+	opacity: 0.5;
+}	*/
 .navMenu.show {
 	background-color: #fff;
 	display: flex;
